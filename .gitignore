@@ -1,0 +1,10 @@
+*.log
+*.temp
+/node_modules/
+/ios/build/
+/android/build/
+android/.idea/*
+/android/.idea/*
+.idea
+.idea/*
+/.idea/*
