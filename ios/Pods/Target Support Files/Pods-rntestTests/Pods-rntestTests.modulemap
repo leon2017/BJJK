@@ -1,0 +1,6 @@
+framework module Pods_rntestTests {
+  umbrella header "Pods-rntestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
