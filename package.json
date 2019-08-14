@@ -26,6 +26,7 @@
     "react-native-province-city-area": "^1.0.0",
     "react-native-roll-picker": "^1.0.6",
     "react-native-storage": "^1.0.1",
+    "react-native-svg": "^9.6.2",
     "react-native-swiper": "^1.5.14",
     "react-native-tab-navigator": "^0.3.4",
     "react-native-webview": "^5.12.1",

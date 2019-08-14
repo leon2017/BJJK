@@ -172,7 +172,7 @@ const AppNavigator = createStackNavigator({
         })
     }
 }, {
-    initialRouteName: 'AuthBase' //login
+    initialRouteName: 'AuthPhone' //login
 });
 
 export default createAppContainer(AppNavigator);

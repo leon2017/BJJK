@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SafeAreaView, Dimensions } from 'react-native';
+import { SafeAreaView, Dimensions,View, Text } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { merchantId } from '../../../api';
 import commons from '../../../getItems';
@@ -23,6 +23,11 @@ class AuthPhone extends Component {
 
     }
 
+    golink () {
+        console.log('1234');
+        this.props.navigation.navigate('Authen');
+    }
+
     componentDidMount() {
         let _this = this;
         commons.getItemParams(this, function () {
@@ -30,24 +35,24 @@ class AuthPhone extends Component {
                 uri: `https://api.51datakey.com/h5/importV3/index.html#/carrier?apiKey=${_this.state.apiKey}&userId=${merchantId + ',' +  _this.state.userId}`
             });
         });
-
-        setTimeout(function() {
-            console.log(_this.state.uri);
-        }, 1200)
     }
     
 
     render () {
         return (
             <SafeAreaView style={{flex: 1}}>
-                <WebView 
-                     style={{width: width, height: height}}
-                     source={{uri: this.state.uri }}
-                     onMessage={ event => {
-                         this._onMessage(event);
-                     } }   
-                >
-                </WebView>
+                <View style={{flex:1, position: 'relative'}}>
+                    <WebView 
+                        style={{width: width, height: height}}
+                        source={{uri: this.state.uri }}
+                        onMessage={ event => {
+                            this._onMessage(event);
+                        } }   
+                    >
+                    </WebView>
+
+                    <Text onPress={this.golink.bind(this)} style={{position: 'absolute', left: 0, top: 0, width: 44, height: 44, zIndex:10}}></Text>
+                </View>
             </SafeAreaView>
         )
     }
