@@ -25,7 +25,6 @@ import ResetPsw from './src/pages/login/resetPsw';
 import Authen from './src/pages/authen';
 import AuthPhone from './src/pages/authPhone';
 import AuthBase from './src/pages/authBase';
-import City from './src/pages/authBase/city';
 
 
 const AppNavigator = createStackNavigator({
@@ -171,16 +170,9 @@ const AppNavigator = createStackNavigator({
         navigationOptions: ({navigation}) => ({
             header: null
         })
-    },
-
-    City: {
-        screen: City,
-        navigationOptions: ({navigation}) => ({
-            header: null
-        })
     }
 }, {
-    initialRouteName: 'AuthBase' //login
+    initialRouteName: 'AuthPhone' //login
 });
 
 export default createAppContainer(AppNavigator);

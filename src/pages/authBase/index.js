@@ -35,12 +35,7 @@ class AuthPhone extends Component {
 
     getPhoneList() {
         if (Platform.OS === 'ios') {
-            Contacts.getAll((err, contacts) => {
-                if (err) {
-                    throw err;
-                }
-                console.log(contacts);
-            })
+            
         } else {
             PermissionsAndroid.request(
                 PermissionsAndroid.PERMISSIONS.READ_CONTACTS,
