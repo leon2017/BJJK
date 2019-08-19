@@ -52,6 +52,7 @@
 		B54015F486284E14BF468EA2 /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C11A306C645B4ABD6273B /* libRNCWebView.a */; };
 		B81D2708BB6644C3871B7D5A /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AB479CE13F4090A946D73D /* libRNGestureHandler.a */; };
 		BA52761B7FC803344B4957A6 /* Pods_rntest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF248A3942E02C5F0AA8664B /* Pods_rntest.framework */; };
+		C922ABFC230417C50015DAD0 /* libRCTContacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A58F5F2303ACDA003F810B /* libRCTContacts.a */; };
 		C99E33E722D7218F00D53CA2 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = C99E33E522D7218F00D53CA2 /* main.jsbundle */; };
 		C99E33E822D7218F00D53CA2 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = C99E33E622D7218F00D53CA2 /* assets */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
@@ -476,6 +477,7 @@
 				06E6B8C622EB13D00040E694 /* VerifyCode.framework in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
+				C922ABFC230417C50015DAD0 /* libRCTContacts.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
