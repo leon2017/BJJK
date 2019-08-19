@@ -24,7 +24,6 @@ class AuthPhone extends Component {
     }
 
     golink () {
-        console.log('1234');
         this.props.navigation.navigate('Authen');
     }
 
